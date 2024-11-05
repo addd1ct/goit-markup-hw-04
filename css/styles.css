@@ -439,7 +439,7 @@ address {
   transform: translateY(0);
 }
 
-.portfolio-box .overlay {
+.overlay {
   position: relative;
   overflow: hidden;
 }
