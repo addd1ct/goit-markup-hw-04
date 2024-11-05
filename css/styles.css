@@ -328,7 +328,7 @@ address {
   transform: translateY(100%);
 }
 .portfolio-item:hover .portfolio-p {
-  transform: translateY(0%);
+  transform: translateY(0);
 }
 
 .third-section .container .team-list {
