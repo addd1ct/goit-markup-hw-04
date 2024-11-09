@@ -218,11 +218,6 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.page-header .nav {
-  display: flex;
-  gap: 40px;
-}
-
 span {
   color: #2e2f42;
 }
@@ -322,9 +317,12 @@ address {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .third-section .container .team-list {
@@ -373,8 +371,10 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/bckg-image.jpg);
+    url(../images/bckg-image.jpg);
   background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .portfolio-list {
@@ -481,8 +481,7 @@ address {
   height: 100%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
-  position: relative;
-  overflow: hidden;
+  position: absolute;
 }
 
 .page-footer .container {
@@ -501,4 +500,9 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+}
+
+.portfolio-photo {
+  position: relative;
+  overflow: hidden;
 }
